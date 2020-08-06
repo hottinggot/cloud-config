@@ -3,12 +3,12 @@ spring:
     hikari:
       connection-test-query: select 1
       allow-pool-suspension: true
-    jpa:
-      database: mysql
-      database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-      generate-ddl: true
-      hibernate:
-        use-new-id-generator-mapping: false
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+    hibernate:
+      use-new-id-generator-mapping: false
 
 mybatis:
   configuration:
@@ -24,11 +24,11 @@ spring:
       jdbc-url: jdbc:log4jdbc:mysql://localhost:3306/board?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
       username: seojeong1106
       password: S!981106s
-    thymeleaf:
-      cache: false
-    resources:
-      cache:
-        period: 0
+  thymeleaf:
+    cache: false
+  resources:
+    cache:
+      period: 0
 
 ---
 
